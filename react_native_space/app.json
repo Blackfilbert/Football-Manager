@@ -1,0 +1,160 @@
+{
+  "expo": {
+    "name": "",
+    "slug": "abacusai-mobile-apps",
+    "version": "1.0.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0A0E1A",
+      "image": "./assets/splash.png",
+      "resizeMode": "cover"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "",
+      "buildNumber": "15",
+      "splash": {
+        "backgroundColor": "#0A0E1A",
+        "image": "./assets/splash.png",
+        "resizeMode": "cover"
+      },
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": ""
+          },
+          {
+            "SKAdNetworkIdentifier": ""
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A1628"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "",
+      "versionCode": 15,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "",
+              "host": "*"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "splash": {
+        "backgroundColor": "#0A0E1A",
+        "image": "./assets/splash.png",
+        "resizeMode": "cover"
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "com.android.vending.BILLING"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#0A0E1A",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      "./plugins/withFullScreenSplash",
+      "expo-router",
+      "./plugins/withAdiRegistration",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "",
+          "clientToken": "",
+          "displayName": "",
+          "scheme": "",
+          "advertiserIDCollectionEnabled": true,
+          "autoLogAppEventsEnabled": true,
+          "isAutoInitEnabled": true,
+          "iosUserTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ],
+      [
+        "expo-navigation-bar",
+        {
+          "position": "absolute",
+          "visibility": "hidden",
+          "behavior": "overlay-swipe"
+        }
+      ],
+      "./plugins/withForceLightMode",
+      [
+        "react-native-appsflyer",
+        {
+          "shouldUsePurchaseConnector": true
+        }
+      ],
+      [
+        "./plugins/withAppLovinMediation",
+        {
+          "sdkKey": "",
+          "admobAppId": ""
+        }
+      ],
+      "react-native-iap",
+      "expo-font",
+      [
+        "./plugins/withAdMobAppId",
+        {
+          "appId": ""
+        }
+      ],
+      [
+        "./plugins/withFacebookSdk",
+        {
+          "appId": "",
+          "clientToken": "",
+          "displayName": ""
+        }
+      ],
+      "./plugins/withBillingClient"
+    ],
+    "scheme": "",
+    "extra": {
+      "router": {},
+      "facebook": {
+        "appId": "",
+        "clientToken": "",
+        "displayName": ""
+      },
+      "eas": {
+        "projectId": ""
+      },
+      "expo-navigation-bar": {
+        "position": "absolute",
+        "visibility": "hidden",
+        "behavior": "overlay-swipe"
+      }
+    },
+    "owner": "abacus.ai"
+  }
+}
